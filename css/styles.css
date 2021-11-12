@@ -19,11 +19,11 @@
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background-color: #9575cd;
+    background-color: #56407c;
     color: floralwhite;
 }
 
-.address {
+address {
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
