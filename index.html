@@ -31,19 +31,40 @@
             
             <!-- TO HIDE NAVBAR ON SMALL AND EXTRA SMALL SCREENS -->
             <div class="collapse navbar-collapse" id="Navbar">
-                <!-- //LINKS TO NAVIGATE -->
+                <!-- //LINKS TO NAVIGATE  PAGES-->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a href="./aboutus.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a href="contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
-
+                <!-- TRIGGER TO THE MODAL LINK BELOW -->
+                <span class="navbar-text">
+                    <a href="" data-target="#loginModal" data-toggle="modal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
             
         </div>
-
     </nav>
+<!-- BOOTSTRAP MODAL  -->
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button class="close" type="button" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
