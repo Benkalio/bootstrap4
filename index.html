@@ -57,10 +57,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm align-self-center ">
-                    <a href="#reserve-form">
-                        <button class="btn-sm btn-block btn-warning">
+                    <a role="button" class="btn btn-block nav-link btn-warning" href="#reserve-form"
+                        data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678 </strong>" 
+                        data-placement="bottom">
                         Reserve Table
-                        </button>
                     </a>
                 </div>
             </div>
@@ -216,6 +216,12 @@
        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+       <script>
+        //    WE USE JQUERY SYNTAX TO INTRODUCE A FUNCTION THAT CALL THE DATA TOGGLE TO TURN-ON TOOLKIT WHEN PAGE IS READY 
+           $(document).ready(function(){
+               $('[data-toggle="tooltip"]').tooltip();
+           });
+       </script>
 </body>
 
 </html>
