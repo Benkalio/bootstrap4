@@ -50,7 +50,7 @@
     </nav>
     <!-- BOOTSTRAP LOGIN MODAL  -->
     <div class="modal fade" id="loginModal" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-dialog modal-lg" role="content" id="loginModal">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
@@ -132,7 +132,8 @@
                         <div class="form-group row">
                             <label for="Section" class="col-12 col-md-2 col-form-label"><b>Section</b></label>
                             <div class="col-12 col-sm-6">
-                                <div class="btn-group" data-toggle="buttons">                                        <a type="button" class="btn btn-check btn-success active">Non-Smoking</a>
+                                <div class="btn-group" data-toggle="buttons"> 
+                                    <a type="button" class="btn btn-check btn-success active">Non-Smoking</a>
                                     <a type="button" class="btn btn-danger text-white">Smoking</a>
                                 </div>
                             </div>
@@ -335,18 +336,18 @@
        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
        <script>
-        //JQUERY TO TRIGGER RESERVE TABLE 
-        $(document).on( 'click', function() {
-            $('#reserve-form').modal('show')
-        });
-
+        
         //JQUERY TO TRIGGER LOGIN PAGE
-        $(document).on( '', function() {
-            $('').modal('show')
-        });
+        // $(document).on( 'click', function() {
+        //     $('#loginModal').modal('show')
+        // });
          
         //    JQUERY TO ACTIVATE THE CAROUSEL BUTTONS TO SET THE TIMER
         $(document).ready(function() {
+            //JQUERY TO TRIGGER RESERVE TABLE 
+            $('#reserve-form').on( 'click', function() {
+                $("#reserve-form").modal('show')
+            });
             $('#mycarousel').carousel({ interval: 2000 });
 
             // WHAT HAPPENS WHEN THE BUTTONS IS CLICKED
