@@ -340,8 +340,7 @@
             $('#mycarousel').carousel({ interval: 2000 });
 
             // WHAT HAPPENS WHEN THE BUTTONS IS CLICKED
-            $('#carouselButton').click(function() {
-
+            $('#carouselButton').on( "click", function() {
                 // ADDING CONDITIONAL STATEMENT TO TOGGLE THE BUTTON OFF AND ON 
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel("pause");
