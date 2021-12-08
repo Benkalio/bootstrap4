@@ -340,14 +340,15 @@
         //JQUERY TO TRIGGER LOGIN PAGE
         $(document).on( 'click', function() {
             $('#loginModal').modal('show')
+            $('#reserve-form').modal('show')
         });
          
         //    JQUERY TO ACTIVATE THE CAROUSEL BUTTONS TO SET THE TIMER
         $(document).ready(function() {
             //JQUERY TO TRIGGER RESERVE TABLE 
-            $('#reserve-form').on( 'click', function() {
-                $("#reserve-form").modal('show')
-            });
+            // $('#reserve-form').on( 'click', function() {
+            //     $("#reserve-form").modal('show')
+            // });
             $('#mycarousel').carousel({ interval: 2000 });
 
             // WHAT HAPPENS WHEN THE BUTTONS IS CLICKED
