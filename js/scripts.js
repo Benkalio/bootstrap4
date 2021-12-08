@@ -19,9 +19,9 @@ $(document).ready(function() {
     
     // TOGGLE THE LOGIN AND RESERVE BUTTONS
     $("#loginModalToggle").on('click', function () {
-        $("loginModal").modal('toggle')
+        $("#loginModal").modal('toggle')
     })
     $("#reserveModalToggle").on('click', function() {
-        $("reserve-form").modal('toggle')
+        $("#reserve-form").modal('toggle')
     });
 });
